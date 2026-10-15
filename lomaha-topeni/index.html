@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>AI asistent pro lomaha-topeni.cz – ukázka</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#ece9e2;color:#14201c}
+.bar{position:sticky;top:0;z-index:5;background:#14201c;color:#f4f2ec;padding:10px 18px;display:flex;gap:14px;align-items:center;justify-content:space-between;font-size:14px;line-height:1.4}
+.bar b{font-weight:600}.bar small{opacity:.7}
+.bar button{flex:none;background:#00d084;color:#fff;border:0;border-radius:999px;padding:9px 16px;font:inherit;font-weight:600;cursor:pointer}
+.shot{display:block;width:100%;max-width:1366px;margin:0 auto;box-shadow:0 20px 60px rgba(0,0,0,.18)}
+.pozn{max-width:1366px;margin:0 auto;padding:14px 18px 90px;font-size:13px;color:#5b6a64}
+@media(max-width:640px){.bar small{display:none}}
+</style></head><body>
+<div class="bar"><span><b>Ukázka AI asistenta pro lomaha-topeni.cz</b> <small>· odpovídá z obsahu webu lomaha-topeni.cz · připravil WebHunter</small></span><button type="button" onclick="window.WebHunterChat&&WebHunterChat.open()">Zeptat se asistenta</button></div>
+<img class="shot" src="web.webp?v=545fd684" alt="Snímek webu lomaha-topeni.cz">
+<p class="pozn">Pozadí je snímek Vašeho webu lomaha-topeni.cz. Asistent se na web přidává jedním řádkem kódu, web samotný zůstává beze změny. Telefonní čísla asistent v ukázce neuvádí. Ukázku připravil <a href="https://webhunter.cz" target="_blank" rel="noopener">WebHunter</a>, po 30 dnech ji smažeme.</p>
+<script>
+setTimeout(function(){window.WebHunterChat&&WebHunterChat.open()},1500);
+try{fetch("https://webhunter-admin.webhunter.workers.dev/api/lomaha-topeni/hit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({p:location.pathname,r:document.referrer,w:innerWidth})})}catch(e){}
+</script>
+<script src="https://webhunter-admin.webhunter.workers.dev/chat.js?v=545fd684" data-web="lomaha-topeni" defer></script>
+</body></html>
